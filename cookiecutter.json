@@ -1,0 +1,9 @@
+{
+    "author_name": "Emilio",
+    "author_email": "emilioag",
+    "author_email": "emilioag",
+    "package_name": "djangorestframework_package",
+    "package_version": "0.1.0",
+    "package_description": "Djangorestframework Package",
+    "package_url": "https://github.com/emilioag/djangorest-cookiecutter.git"
+}
