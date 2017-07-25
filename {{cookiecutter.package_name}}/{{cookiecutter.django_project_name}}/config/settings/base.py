@@ -19,15 +19,12 @@ else:
     env_file = os.path.join(os.path.dirname(BASE_DIR), 'local.env.sample')
     environ.Env.read_env(str(env_file))
 
-
 SECRET_KEY = env('SECRET_KEY')
 
 DEBUG = env('DEBUG')
 
 ALLOWED_HOSTS = ['*']
-
 {% if cookiecutter.use_logstash == 'y' -%}
-
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -51,10 +48,7 @@ LOGGING = {
         },
     },
 }
-
 {% endif %}
-
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -65,7 +59,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_swagger',
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -78,7 +71,6 @@ MIDDLEWARE = [
     'django.middleware.locale.LocaleMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
-
 
 ROOT_URLCONF = 'config.urls'
 

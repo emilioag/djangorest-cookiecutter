@@ -2,7 +2,9 @@ Django==1.10.6
 django-environ==0.4.1
 djangorestframework==3.6
 unipath==1.1
+{% if cookiecutter.use_elasticsearch == 'y' -%}
 elasticsearch==5.2.0
+{% endif %}
 Markdown==2.6.8
 Sphinx==1.5.3
 sphinx-rtd-theme==0.2.4
